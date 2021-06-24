@@ -28,7 +28,7 @@ class RoShamBo:
             [-1, 1, 0]
         ]
         self.possible_outcomes = {1: 'You Win!', -1: 'You Lose.', 0: 'It\'s a Tie!'}
-        self.divider = '*' * 50
+        self.divider = '-' * 100
 
     def user_selection(self):
         choices = [f'{action.name}[{action.value}]' for action in self.Action]
