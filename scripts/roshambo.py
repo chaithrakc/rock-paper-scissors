@@ -4,14 +4,6 @@ Rock Paper Scissors Game  https://cs.stanford.edu/people/eroberts/courses/soco/p
 """
 import random
 from enum import IntEnum
-import os
-
-
-def load_welcome_banner():
-    relative_filepath = os.path.join('', '../resources', 'banner.txt')
-    with open(relative_filepath) as file_handler:
-        banner_str = file_handler.read()
-        print(banner_str)
 
 
 class RoShamBo:
@@ -21,7 +13,6 @@ class RoShamBo:
         Scissors = 2
 
     def __init__(self):
-        load_welcome_banner()
         self.payoff_matrix = [
             [0, -1, 1],
             [1, 0, -1],
@@ -60,8 +51,3 @@ class RoShamBo:
             if play_again.lower() != 'y':
                 break
             print(self.divider)  # divider to start the next round of game
-
-
-if __name__ == '__main__':
-    roshambo = RoShamBo()
-    roshambo.play()
