@@ -1,4 +1,7 @@
 # ROCK PAPER SCISSORS GAME
+rock crushes scissors - paper covers rock - scissors cuts paper
+
+
  
 ```
   _____            _         _____                            _____      _                        
